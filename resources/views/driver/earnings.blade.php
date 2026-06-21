@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('title','Earnings')
+@php
+use Illuminate\Support\Str;
+@endphp
 @push('styles')
 <style>#earningsChart{height:200px}</style>
 @endpush

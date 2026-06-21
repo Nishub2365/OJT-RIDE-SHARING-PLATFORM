@@ -48,7 +48,7 @@ input{transition:box-shadow .2s ease,transform .2s ease}
 
     <div class="card" style="padding:24px">
       <div class="role-tab-group" id="roleTabs">
-      @foreach(['rider'=>['🧑','Rider'],'driver'=>['🏍️','Driver'],'admin'=>['🛡️','Admin']] as $r=>[$icon,$label])
+      @foreach(['rider'=>['🧑','Rider'],'driver'=>['🏍️','Driver']] as $r=>[$icon,$label])
         <div class="role-tab {{ (request('role')===$r||(!request('role')&&$r==='rider'))?'active':'' }}"
              onclick="setRole('{{ $r }}')">{{ $icon }} {{ $label }}</div>
         @endforeach

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('title','Bid History')
+@php
+use Illuminate\Support\Str;
+@endphp
 @section('content')
 <div class="page-title" style="margin-bottom:20px">📨 My Bids</div>
 <div class="card">

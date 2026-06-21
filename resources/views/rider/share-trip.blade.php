@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title','Share Trip')
 @section('content')
+@php
+use Illuminate\Support\Str;
+@endphp
 <div style="max-width:520px;margin:0 auto">
 <div class="card" style="text-align:center">
   <div style="font-size:48px;margin-bottom:12px">📡</div>
